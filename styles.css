@@ -4,6 +4,7 @@ body {
   position: relative;
   background-color: #303030;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
 #navbar {
@@ -39,11 +40,19 @@ body {
   text-decoration: underline;
 }
 
+.property-li a {
+  padding-left: 20px;
+}
+
 #main-doc {
   position: absolute;
   background-color: #303030;
   margin-left: 352px;
   height: 100%;
+}
+
+#main-doc hr {
+  width: 150%;
 }
 
 .main-section {
@@ -70,21 +79,33 @@ body {
 }
 
 .main-section a {
+  background-color: #404040;
   color: #fff;
+}
+
+.main-section a:hover {
+  border: 1px solid #fff;
   text-decoration: none;
+}
+
+.properties-section {
+  padding-left: 50px;
 }
 
 @media all and (max-width: 800px) {
   #navbar {
+    position: absolute;
     top: 0;
     width: 100%;
     height: 250px;
     border-bottom: 2px solid #fff;
-    overflow-x: hidden;
     overflow-y: auto;
   }
   #navbar li {
     text-align: center;
+    padding-left: 20px;
+  }
+  .property-li a {
     padding-left: 0px;
   }
   #main-doc {
