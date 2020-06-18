@@ -13,44 +13,48 @@
         <h1 id="nav-title">What is CSS Flexbox?</h1>
       </header>
       <ul>
-        <li><a class="nav-link" href="#">Introduction</a></li>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
         <hr />
-        <li><a class="nav-link" href="#">Properties for the Parent</a></li>
+        <li>
+          <a class="nav-link" href="#parent">Properties for the Parent</a>
+        </li>
         <hr />
-        <li><a class="nav-link" href="#">display</a></li>
+        <li><a class="nav-link" href="#display">display</a></li>
         <hr />
-        <li><a class="nav-link" href="#">flex-direction</a></li>
+        <li><a class="nav-link" href="#flex-direction">flex-direction</a></li>
         <hr />
-        <li><a class="nav-link" href="#">flex-wrap</a></li>
+        <li><a class="nav-link" href="#flex-wrap">flex-wrap</a></li>
         <hr />
-        <li><a class="nav-link" href="#">flex-flow</a></li>
+        <li><a class="nav-link" href="#flex-flow">flex-flow</a></li>
         <hr />
-        <li><a class="nav-link" href="#">justify-content</a></li>
+        <li><a class="nav-link" href="#justify-content">justify-content</a></li>
         <hr />
-        <li><a class="nav-link" href="#">align-items</a></li>
+        <li><a class="nav-link" href="#align-items">align-items</a></li>
         <hr />
-        <li><a class="nav-link" href="#">align-content</a></li>
+        <li><a class="nav-link" href="#align-content">align-content</a></li>
         <hr />
-        <li><a class="nav-link" href="#">Properties for the Children</a></li>
+        <li>
+          <a class="nav-link" href="#children">Properties for the Children</a>
+        </li>
         <hr />
-        <li><a class="nav-link" href="#">order</a></li>
+        <li><a class="nav-link" href="#order">order</a></li>
         <hr />
-        <li><a class="nav-link" href="#">flex-grow</a></li>
+        <li><a class="nav-link" href="#flex-grow">flex-grow</a></li>
         <hr />
-        <li><a class="nav-link" href="#">flex-shrink</a></li>
+        <li><a class="nav-link" href="#flex-shrink">flex-shrink</a></li>
         <hr />
-        <li><a class="nav-link" href="#">flex-basis</a></li>
+        <li><a class="nav-link" href="#flex-basis">flex-basis</a></li>
         <hr />
-        <li><a class="nav-link" href="#">flex</a></li>
+        <li><a class="nav-link" href="#flex">flex</a></li>
         <hr />
-        <li><a class="nav-link" href="#">align-self</a></li>
+        <li><a class="nav-link" href="#align-self">align-self</a></li>
         <hr />
-        <li><a class="nav-link" href="#">Reference</a></li>
+        <li><a class="nav-link" href="#references">Reference</a></li>
       </ul>
     </nav>
     <main id="main-doc">
       <section class="main-section">
-        <h2 class="main-title">Introduction</h2>
+        <h2 id="introduction" class="main-title">Introduction</h2>
         <p>What is exactly is CSS Flex Box?</p>
         <br />
         <p>
@@ -67,9 +71,7 @@
         </p>
       </section>
       <section class="main-section">
-        <h2 class="main-title">
-          Parent
-        </h2>
+        <h2 id="parent" class="main-title">Parent</h2>
         <p>
           The parent is the container, and in this case it is called the flex
           container. The parent has many properties that can help you alter how
@@ -86,7 +88,221 @@
         </ul>
       </section>
       <section class="main-section">
-        <h2 class="main-title">display</h2>
+        <h2 id="display" class="main-title">display</h2>
+        <p>
+          This property defines a flex container. The container can be inline or
+          block depending on the given value. This property is what enables flex
+          context for all of the direct children.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="flex-direction" class="main-title">flex-direction</h2>
+        <p>
+          This property sets the direction of the main axis. This determines the
+          direction that the items are placed a flex container.
+        </p>
+        <ul>
+          <li>row (default): left to right</li>
+          <li>row-reverse: right to left</li>
+          <li>column: top to bottom</li>
+          <li>column-reverse: bottom to top</li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <h2 id="flex-wrap" class="main-title">flex-wrap</h2>
+        <p>
+          By default all of the flex items will try to fit themselves onto one
+          line. This can be changed with the flex-wrap property.
+        </p>
+        <ul>
+          <li>nowrap (default): all flex items will be on a single line</li>
+          <li>
+            wrap: flex items will wrap on multiple lines going from top to
+            bottom
+          </li>
+          <li>
+            wrap-reverse: flex items will wrap on multiple lines going from
+            bottom to top
+          </li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <h2 id="flex-flow" class="main-title">flex-flow</h2>
+        <p>
+          This is the shorthand method for the flex-direction and flex-wrap
+          properties. Together these properties determine the flex container's
+          main and cross axes.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="justify-content" class="main-title">justify-content</h2>
+        <p>
+          This property defines the alignment of the flex items along the main
+          axis. If there is available extra space on a line when items are
+          inflexible or have reached their maximum size.
+        </p>
+        <ul>
+          <li>
+            flex-start (default): items are compiled at the start of the
+            flex-direction
+          </li>
+          <li>flex-end: items are compiled at the end of the flex-direction</li>
+          <li>
+            start: items are compiled at the start of the writing-mode direction
+          </li>
+          <li>
+            end: items are compiled at the end of the writing-mode direction
+          </li>
+          <li>
+            left: items are compiled towards the left side of the
+            flex-container. If that option does not work with flex-direction
+            then it behaves like start
+          </li>
+          <li>
+            right: items are compiled toward the right side of the
+            flex-container. If that option does not work with flex-direction
+            then it behaves like start.
+          </li>
+          <li>center: items are centered along the line</li>
+          <li>
+            space-between: items are evenly distributed along the main axis.
+          </li>
+          <li>
+            space-around: items are distributed along the line with equal space
+            around them. The spaces will not appear to be equal because the
+            space between items combines the spaces of both.
+          </li>
+          <li>
+            space-evenly: items are spaced so the space between them is equal.
+            The edges of container also have equal space between them and the
+            first/last item
+          </li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <h2 id="align-items" class="main-title">align-items</h2>
+        <p>
+          This property defines the layout of the flex items along the cross
+          axis on the current line. The justify-content content equivalent for
+          the cross-axis.
+        </p>
+        <ul>
+          <li>
+            stretch (default): the flex items will stretch to fill the
+            container, however min-width/max-width are respected
+          </li>
+          <li>
+            flex-start / start / self-start: items are placed at the start of
+            the cross axis. The choice of value depends on respecting the rules
+            of flex-direction or writing mode.
+          </li>
+          <li>
+            flex-end / end / self-end: items are placed at the end of the cross
+            axis. The choice of value depends on respecting the rules of
+            flex-direction or writing mode.
+          </li>
+          <li>center: the items are centered along the cross axis</li>
+          <li>
+            baseline: items are aligned so that their baselines(bottom of text)
+            align.
+          </li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <h2 id="align-content" class="main-title">align-content</h2>
+        <p>
+          If there is extra space along the cross axis, this property will
+          determine that space in relation to the flex items. The
+          justify-content equivalent for the cross axis.
+        </p>
+        <ul>
+          <li>stretch (default): lines stretch to take up available space</li>
+          <li>
+            flex-start / start: items are compiled to the start of the container
+          </li>
+          <li>
+            flex-end / end: items are compiled to the end of the container.
+          </li>
+          <li>center: items are centered in the container</li>
+          <li>
+            space-between: items are evenly distributed along the cross axis.
+          </li>
+          <li>
+            space-around: items are distributed evenly with an equal amount of
+            space between each line
+          </li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <h2 id="children" class="main-title">Children</h2>
+        <p>
+          The children are the flex items that are placed within the parent or
+          flex container. The flex-items have several properties that can be
+          used to determine their behavior within the flex container.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="order" class="main-title">order</h2>
+        <p>
+          By default flex items are laid out in the order of their source code.
+          The order property can be used to alter the order in which they appear
+          in the flex container.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="flex-grow" class="main-title">flex-grow</h2>
+        <p>
+          This property defines the ability for a flex item to grow if
+          necessary. The value given is a proportion that determines the amount
+          of available space that a flex item should occupy.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="flex-shrink" class="main-title">flex-shrink</h2>
+        <p>
+          This property defines the ability for a flex item to shrink if
+          necessary.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="flex-basis" class="main-title">flex-basis</h2>
+        <p>
+          This property defines the default size of an item before the remaining
+          space is distributed.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="flex" class="main-title">flex</h2>
+        <p>
+          This property is the shorthand for flex-grow, flex-shrink and flex
+          basis. The shorthand is recommended as it sets the other values
+          intelligently.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="align-self" class="main-title">align-self</h2>
+        <p>
+          This allows the default alignment along the cross axis(or alignment
+          specified by align-items property in the flex container) to be
+          overridden for individual flex items.
+        </p>
+      </section>
+      <section class="main-section">
+        <h2 id="references" class="main-title">References</h2>
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+              >A Complete Guide to Flexbox</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="https://developer.mozilla.org/en-US/"
+              >MDN web docs</a
+            >
+          </li>
+        </ul>
       </section>
     </main>
   </body>

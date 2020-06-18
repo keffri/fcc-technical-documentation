@@ -48,8 +48,7 @@ body {
 
 .main-section {
   color: #fff;
-  padding-top: 20px;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .main-title {
@@ -65,7 +64,17 @@ body {
   padding: 20px 0px 0px 40px;
 }
 
-@media all and (max-width: 600px) {
+.main-section li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.main-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@media all and (max-width: 800px) {
   #navbar {
     top: 0;
     width: 100%;
