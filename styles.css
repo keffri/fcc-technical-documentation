@@ -28,15 +28,15 @@ body {
   padding: 9px 0px 9px 20px;
 }
 
-.nav-link {
+#navbar a {
   color: #fff;
 }
 
-.nav-link:link {
+#navbar a:link {
   text-decoration: none;
 }
 
-.nav-link:hover {
+#navbar a:hover {
   text-decoration: underline;
 }
 
